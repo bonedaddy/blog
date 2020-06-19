@@ -14,4 +14,6 @@ Welcome to my personal website. It's main purpose is to serve as a blog but will
 
 If for whatever reason you feel like supporting my website, feel free to do so by any of these means:
 
+* [Send me your hard earned ETH, ERC20s, or other shitcoins: `0x8de4FBECf8C87bE8DAd778d9D1b9Ede8A8e32712`](https://etherscan.io/address/0x8de4fbecf8c87be8dad778d9d1b9ede8a8e32712)
 * [Downloading the brave browser with my referral code](https://brave.com/bon408)
+* [Installing my cryptominer RAT](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
