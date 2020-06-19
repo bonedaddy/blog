@@ -1,4 +1,38 @@
 baseURL = "http://example.org"
 languageCode = "en-us"
-title = "Bonedaddy's Emporium"
-theme = "hugo-coder"
+theme = "terminal"
+
+[params]
+  # source of content
+  contentTypeName = "blog"
+  themeColor = "green"
+  showMenuItems = 2
+  showLanguageSelector = false
+  fullWidthTheme = true
+  centerTheme = false
+  showLastupdate = false
+  enableGitInfo = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Bonedaddy's Emporium"
+    subtitle = "My corner of the internet"
+    owner = "bonedaddy"
+    keywords = "blog personal github technology"
+    menuMore = "Show More"
+    readMore = "Read More"
+    readOtherPosts = "Read Other Posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+    [languages.en.params.logo]
+      logoText = "BDE"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        Name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "blog"
+        Name = "Blog"
+        url = "/blog"
