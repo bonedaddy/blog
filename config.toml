@@ -1,6 +1,6 @@
 baseURL = "http://example.org"
 languageCode = "en-us"
-theme = "terminal"
+theme = ["hugo-notice", "terminal"]
 
 [params]
   # source of content
@@ -8,8 +8,8 @@ theme = "terminal"
   themeColor = "green"
   showMenuItems = 2
   showLanguageSelector = false
-  fullWidthTheme = true
-  centerTheme = false
+  fullWidthTheme = false
+  centerTheme = true
   showLastupdate = false
   enableGitInfo = true
 
