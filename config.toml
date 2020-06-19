@@ -1,6 +1,7 @@
-baseURL = "http://example.org"
+baseURL = "/"
 languageCode = "en-us"
 theme = ["hugo-notice", "terminal"]
+staticDir = "static"
 
 [params]
   # source of content
