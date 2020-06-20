@@ -27,7 +27,7 @@ staticDir = "static"
     missingContentMessage = "Page not found..."
     missingBackButtonLabel = "Back to home page"
     [languages.en.params.logo]
-      logoText = "BDE"
+      logoText = "Home"
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
@@ -37,10 +37,6 @@ staticDir = "static"
         identifier = "blog"
         Name = "Blog"
         url = "/blog"
-      [[languages.en.menu.main]]
-        identifier = "home"
-        Name = "Home"
-        url = "/"
       [[languages.en.menu.main]]
         identifier = "tests"
         Name = "Tests"
