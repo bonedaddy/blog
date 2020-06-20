@@ -1,9 +1,22 @@
-axios.post("/.netlify/functions/search?s=docker")
+html = `
+<html>
+<form>
+<label onsubmit="search()" for="query">Enter Search Query</label><br>
+<input type="text" id="query" name="query"><br>
+</form>
+</html>
+`
+
+function search(query) {
+    axios.post("/.netlify/functions/search?s="+query)
     .then(function (response) {
         response.data.forEach(element => console.log(element.path));
     })
     .catch(function (error) {
         console.error(error);
     });
-console.log("broooooo");
-window.alert("DUDE");
+}
+
+document.write(html);
+
+
