@@ -1,7 +1,7 @@
 html = `
 <html>
-<form>
-<label onsubmit="search()" for="query">Enter Search Query</label><br>
+<form action="#" onsubmit="search();return false">
+<label for="query">Enter Search Query</label><br>
 <input type="text" id="query" name="query"><br>
 </form>
 </html>
@@ -16,7 +16,5 @@ function search(query) {
         console.error(error);
     });
 }
-
 document.write(html);
-
 
