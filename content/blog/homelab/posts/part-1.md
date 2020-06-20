@@ -2,6 +2,7 @@
 title: "Part 1 - An Introduction"
 date: 2020-06-19T13:26:43-07:00
 draft: false
+keywords: ["overview", "homelab", "raspberry-pi", "cost", "esxi", "docker", "developer", "technology"]
 ---
 
 # Overview
