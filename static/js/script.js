@@ -1,6 +1,6 @@
 axios.post("/.netlify/functions/search?s=docker")
     .then(function (response) {
-        console.log(response);
+        response.data.forEach(element => console.log(element.path));
     })
     .catch(function (error) {
         console.error(error);
