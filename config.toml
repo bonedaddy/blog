@@ -7,7 +7,7 @@ staticDir = "static"
   # source of content
   contentTypeName = "blog"
   themeColor = "green"
-  showMenuItems = 3
+  showMenuItems = 4
   showLanguageSelector = false
   fullWidthTheme = false
   centerTheme = true
@@ -37,6 +37,10 @@ staticDir = "static"
         identifier = "blog"
         Name = "Blog"
         url = "/blog"
+      [[languages.en.menu.main]]
+        identifier = "home"
+        Name = "Home"
+        url = "/"
       [[languages.en.menu.main]]
         identifier = "tests"
         Name = "Tests"

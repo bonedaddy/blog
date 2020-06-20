@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 date: 2020-06-19T13:19:06-07:00
 draft: false
 ---
@@ -10,7 +10,7 @@ I've been using cryptocurrency since shortly after Bitcoin was created, and star
 
 I'm extremely passionate when it comes to privacy, and am saddened by the way people have thrown away their rights to privacy with the development of modern day technology, and I hope that some of the articles I wrote can inspire people to take back their rights to privacy.
 
-## Links
+# Links
 
 * [github - personal](https://github.com/bonedaddy)
 * [github - company](https://github.com/RTradeLtd)
@@ -19,7 +19,7 @@ I'm extremely passionate when it comes to privacy, and am saddened by the way pe
 * [reddit](https://www.reddit.com/user/post_a_bles)
 * [stackoverflow](https://stackoverflow.com/users/4059724/hextet)
 
-## Supporting This Website
+# Supporting This Website
 
 If for whatever reason you feel like supporting my website, feel free to do so by any of these means:
 
