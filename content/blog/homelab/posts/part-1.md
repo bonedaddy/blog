@@ -6,7 +6,9 @@ draft: false
 
 # Overview
 
-When I was in college for computer systems administration, one of my instructors mentioned that the best way to become familiar with technology, and be a proficient systems administrator, was having a homelab. The homelab allows you to get your hands dirty with real technology in ways similar to on the job experience, but without the pressure about of accidentally taking down a mission critical system. It's also a great environment for trying out new technologies, and staying up to date on existing ones. Another benefit to the homelab that I dont think people talk about much, is it provides an opportunity for you to relieve yourself of dependency on cloud services, and enhance your privacy by using self-hostable versions of common cloud based applications.
+When I was in college for computer systems administration, one of my instructors mentioned that the best way to become familiar with technology, and be a proficient systems administrator, was having a homelab. The homelab allows you to get your hands dirty with real technology in ways similar to on the job experience, but without the pressure about of accidentally taking down a mission critical system. 
+
+It's also a great environment for trying out new technologies, and staying up to date on existing ones. Another benefit to the homelab that I dont think people talk about much, is it provides an opportunity for you to relieve yourself of dependency on cloud services, and enhance your privacy by using self-hostable versions of common cloud based applications.
 
 With the advice of my college instructor, I built my first homelab in 2013, and have been running one ever since then. Using a homelab was one of the best decisions I've made, and I highly recommend anyone in the technology field to create one. It helped me be one of the top students in the college program I was in by being able to recreate in-class lab environments, and has allowed me to become a better systems administrator, and developer in ways that would not be possible without direct on-the-job experience.
 
@@ -18,7 +20,7 @@ The first server I ever got for my homelab was a tower purchased off craigslist 
 
 # Space
 
-If you are short on space, or even want a cheaper budget, you can build a homelab using SBCs (Single Board Computer) like the Raspberry Pi, and be able to fit a homelab into a shoebox! At the time of me writing article, I live in a small house with 5 people so I don't have too much room to run my normal homelab in consisting of tower and rack servers. As such I condensed my server based homelab, into one entirely composed of Raspberry Pi's, and it has worked amazingly. I run an I2P router, gitea server, bitwarden password vault, plexmediaserver, torrent box, and more, all of which take up no more space than a shoebox. In fact, there's one benefit to this strategy that server based environments dont have, and that is a portable homelab!
+If you are short on space, or even want a cheaper budget, you can build a homelab using SBCs (Single Board Computer) like the Raspberry Pi, and be able to fit a homelab into a shoebox! At the time of me writing article, I live in a small house with 5 people so I don't have too much room to run my normal homelab in consisting of tower and rack servers. As such I condensed my server based homelab, into one entirely composed of Raspberry Pi's, and it has worked amazingly. I'm able to run a plethora of services which I'll detail in a following post.
 
 # Management
 
@@ -42,6 +44,4 @@ For primary network infrastructure, nothing beats the good ol' copper wiring, an
 
 # Remote Access
 
-Any homelab without a way of remotely accessing your homelab, isn't really a homelab at all. When done correctly, it's a great way of enabling access to your homelab from anywhere in the world. Have a massive collection of movies, and tv-shows, but don't want to carry a portable hard drive around with you? Remote access! 
-
-Another underrated aspect of remote acess to your homelab comes when travelling to oppresive countries, or crossing a border where the guards can legally demand you unlock all your electronic devices; In these cases you can bring a throw-away netbook, or other small device, and have a secure manner of storing the remote access client so that when unlocking your device any LEO will be unable to detect the remote access client. Using this remote access client you can then securely access all your files in your homelab, work out of your homelab, all without ever having to bring any equipment with you beyond a basic netbook and encrypted USB drive.
+Any homelab without a way of remotely accessing your homelab, isn't really a homelab at all. When done correctly, it's a great way of enabling access to your homelab from anywhere in the world. Have a massive collection of movies, and tv-shows, but don't want to carry a portable hard drive around with you? Remote access! It also means that if you need access to sensitive information while remote, you can leave that information in the safety of your home, and be able to access it remotely.
