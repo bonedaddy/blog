@@ -1,0 +1,7 @@
+{{ define "main" }}
+<main>
+    {{- range .Params.js }}
+    <script src="/js/{{ . }}.js"></script>
+    {{- end }}
+</main>
+{{ end }} 
