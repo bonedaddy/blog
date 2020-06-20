@@ -18,7 +18,7 @@ staticDir = "static"
   [languages.en]
     languageName = "English"
     title = "Bonedaddy's Emporium"
-    subtitle = "My corner of the internet"
+    subtitle = "My Corner Of The Internet"
     owner = "bonedaddy"
     keywords = "blog personal github technology"
     menuMore = "Show More"
