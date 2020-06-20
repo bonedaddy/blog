@@ -3,7 +3,7 @@ publish = "public"
 command = "hugo --gc --minify"
 functions = functions
 
-[plugins]
+[[plugins]]
   package = netlify-plugin-search-index
 
 [context.production.environment]
