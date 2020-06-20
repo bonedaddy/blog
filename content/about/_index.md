@@ -8,11 +8,7 @@ At the time of this writing I'm 26 years old and CTO for a startup working on di
 
 I've been using cryptocurrency since shortly after Bitcoin was created, and started mining bitcoin in late 2009, early 2010, although sadly I sold all my cryptocurrency in 2014 and stopped interacting with the ecosystem. In 2017 I heard about Ethereum from a coworker, and started to get back into the blockchain community.
 
-I've worked a diverse set of jobs in the technology field, and can profficiently work as:
-
-* backend software engineer
-* linux/unix systems administration
-* solidity smart contract developer
+I'm extremely passionate when it comes to privacy, and am saddened by the way people have thrown away their rights to privacy with the development of modern day technology, and I hope that some of the articles I wrote can inspire people to take back their rights to privacy.
 
 ## Links
 
