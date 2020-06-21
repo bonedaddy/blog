@@ -2,6 +2,7 @@
 title: "Resume"
 date: 2020-06-20T02:00:35-07:00
 draft: true
+keywords: ["resume"]
 ---
 
 # Overview
