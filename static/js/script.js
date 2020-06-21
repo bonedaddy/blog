@@ -5,6 +5,7 @@ html = `
 <label for="query">Enter Search Query</label><br>
 <input type="text" id="query" name="query"><br>
 </form>
+<br>
 <button type="button" onclick="clearPage();return false">clear</button>
 </div>
 </html>
