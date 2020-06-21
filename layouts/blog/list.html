@@ -4,6 +4,11 @@
       {{ . }}
     </div>
   {{ end }}
+  <div style="text-align: center;">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ end }}
+  </div>
   <div class="posts">
     {{ range .Pages }}
       <div class="post on-list">

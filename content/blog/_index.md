@@ -6,3 +6,5 @@ keywords: ["privacy", "homelab", "raspberry pi", "esxi", "docker", "developer", 
 ---
 
 Welcome to my blog. Most of the content here will likely be technology related, although there may be some stuff about my personal life and past experiences. This page is organized into sections, named by a topic. For example clicking `Homelab` will take to a series of articles related to homnelabs, and clicking `Privacy` will take you to a series of articles related to privacy.
+
+At the moment I have articles on the following topics. Down below those you'll find a summary of the topics and what the articles will be about.
