@@ -15,13 +15,19 @@ function search(query) {
         let l = "";
         response.data.forEach(
             element => {
-                l += `<p>` + element + `</p>`;
+                l += `<p>` + element.path + `</p>`;
             }
         );
         document.getElementById('main-p').innerHTML += l;
     })
     .catch(function (error) {
-        document.getElementById('main-p').innerHTML += error;
+        const output = `
+        </br>
+        <body>
+            Unfortunately your request failed with the following:
+            </br>
+        ` + error + `</body>`
+        document.getElementById('main-p').innerHTML += output;
     });
 }
 document.write(html);
