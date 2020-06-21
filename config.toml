@@ -14,7 +14,8 @@ enableRobotsTXT = "true"
   centerTheme = true
   showLastupdate = false
   enableGitInfo = true
-
+  favicon = "favicon.ico"
+  
 [languages]
   [languages.en]
     languageName = "English"
