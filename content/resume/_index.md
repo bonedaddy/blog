@@ -22,21 +22,25 @@ I'm a proficient software engineer with a diverse technical background that allo
 ### CTO - RTrade Technologies Ltd
 
 From: November 2017 -> Present
+
 TODO: add more details
 
 ### Fullstack Developer - Vanbex
 
 From: March 2017 -> November 2017
+
 TODO: add more details
 
 ### Solidity Developer - Novoa Media
 
 From: September 2016 -> February 2017
+
 TODO: add more details
 
 ### Junior Systems Support Technician - Global Relay
 
 From: September 2014 -> January 2015, January 2016 -> July 2016
+
 TODO: add more details
 
 # Notable Open Source Contributions
