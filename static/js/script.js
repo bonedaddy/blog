@@ -10,7 +10,6 @@ html = `
 </div>
 </html>
 `
-
 function search(query) {
     axios.post("/.netlify/functions/search?s="+query.value)
     .then(function (response) {

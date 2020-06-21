@@ -7,7 +7,7 @@ staticDir = "static"
   # source of content
   contentTypeName = "blog"
   themeColor = "green"
-  showMenuItems = 2
+  showMenuItems = 5
   showLanguageSelector = false
   fullWidthTheme = false
   centerTheme = true
