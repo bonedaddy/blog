@@ -6,7 +6,7 @@ draft: true
 
 # Overview
 
-I'm a proficient software engineer with a diverse technical background that allows me to play multiple roles efficiently, and practically. I prefer working as a backend engineer, but am more than adept when it comes to DevOps, or systems administration tasks. I've developed a wide variety of software monotholic, and distributed and can work with bleeding edge technologies such as blockchain and smart contract development. Having a background in systems administration, I have a good ability to develop software that is easy for other systems administrators to manage. Additionally I view documentation writing as one of the most important tasks in software development, and make sure to write documentation as I go, not weeks after.
+I'm a proficient software engineer with a diverse technical background that allows me to play multiple roles efficiently, and practically. I prefer working as a backend engineer, but am more than adept when it comes to DevOps, or systems administration tasks. I can quickly adapt to new and unfamiliar environments, and view documentation writing as an essential part of softare development.
 
 # Skillset
 
