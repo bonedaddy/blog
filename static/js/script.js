@@ -5,6 +5,7 @@ html = `
 <label for="query">Enter Search Query</label><br>
 <input type="text" id="query" name="query"><br>
 </form>
+<button type="button" onclick="clearPage();return false">clear</button>
 </div>
 </html>
 `
@@ -30,5 +31,10 @@ function search(query) {
         document.getElementById('main-p').innerHTML += output;
     });
 }
+
+function clearPage() {
+    document.getElementById('main-p').innerHTML = html;
+}
+
 document.write(html);
 
