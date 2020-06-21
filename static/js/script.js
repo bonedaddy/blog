@@ -10,7 +10,12 @@ html = `
 function search(query) {
     axios.post("/.netlify/functions/search?s="+query.value)
     .then(function (response) {
-        response.data.forEach(element => console.log(element.path));
+        const l = "hello";
+        response.data.forEach(
+            element => {
+                document.writeln(`<p>` + element + `</p>`);
+            }
+            );
     })
     .catch(function (error) {
         console.error(error);

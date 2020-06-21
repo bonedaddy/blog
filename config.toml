@@ -7,7 +7,7 @@ staticDir = "static"
   # source of content
   contentTypeName = "blog"
   themeColor = "green"
-  showMenuItems = 5
+  showMenuItems = 2
   showLanguageSelector = false
   fullWidthTheme = false
   centerTheme = true
@@ -42,6 +42,6 @@ staticDir = "static"
       #  Name = "Resume"
       #  url = "/resume"
       [[languages.en.menu.main]]
-        identifier = "tests"
-        Name = "Tests"
-        url = "/tests"
+        identifier = "random"
+        Name = "Random"
+        url = "/Random"
