@@ -1,24 +1,27 @@
 html = `
 <html>
+<div id="main-p">
 <form action="#" onsubmit="search(query);return false">
 <label for="query">Enter Search Query</label><br>
 <input type="text" id="query" name="query"><br>
 </form>
+</div>
 </html>
 `
 
 function search(query) {
     axios.post("/.netlify/functions/search?s="+query.value)
     .then(function (response) {
-        const l = "hello";
+        let l = "";
         response.data.forEach(
             element => {
-                document.writeln(`<p>` + element + `</p>`);
+                l += `<p>` + element + `</p>`;
             }
-            );
+        );
+        document.getElementById('main-p').innerHTML += l;
     })
     .catch(function (error) {
-        console.error(error);
+        document.getElementById('main-p').innerHTML += error;
     });
 }
 document.write(html);
