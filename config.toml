@@ -6,6 +6,7 @@ enableRobotsTXT = "true"
 
 [params]
   # source of content
+  description = "bonedaddy's personal website and blog"
   contentTypeName = "blog"
   themeColor = "green"
   showMenuItems = 5
