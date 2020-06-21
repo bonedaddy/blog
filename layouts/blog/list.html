@@ -5,8 +5,10 @@
     </div>
   {{ end }}
   <div style="text-align: center;">
-    {{ range .Pages }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ if not .Params.DisableListOverride }}
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ end }}
     {{ end }}
   </div>
   <div class="posts">
