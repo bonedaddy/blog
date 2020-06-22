@@ -1,13 +1,17 @@
 ---
 title: "Resume"
 date: 2020-06-20T02:00:35-07:00
-draft: true
+draft: false
 keywords: ["resume"]
 ---
 
+{{<notice warning>}}
+This is a very basic version of my resume, and will be fleshed out as time goes on.
+{{< /notice >}}
+
 # Overview
 
-I'm a proficient software engineer with a diverse technical background that allows me to play multiple roles efficiently, and practically. I prefer working as a backend engineer, but am more than adept when it comes to DevOps, or systems administration tasks. I can quickly adapt to new and unfamiliar environments, and view documentation writing as an essential part of softare development.
+I'm a proficient software engineer with a diverse technical background that allows me to play multiple roles efficiently, and practically. I prefer working as a backend engineer, but am more than adept when it comes to DevOps, or systems administration tasks. I can quickly adapt to new and unfamiliar environments, and view documentation writing as an essential part of the software development lifecycle. [You can find a large collection of my work on GitHub](https://github.com/bonedaddy)
 
 # Skillset
 
@@ -17,6 +21,7 @@ I'm a proficient software engineer with a diverse technical background that allo
 * Distributed application development
 * Blockchain & smart contract development
 * Test Driven Development
+* Documentation writing
 
 # Work Experience
 

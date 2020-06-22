@@ -40,10 +40,10 @@ enableRobotsTXT = "true"
         identifier = "blog"
         Name = "Blog"
         url = "/blog"
-      # [[languages.en.menu.main]]
-      #  identifier = "resume"
-      #  Name = "Resume"
-      #  url = "/resume"
+      [[languages.en.menu.main]]
+        identifier = "resume"
+        Name = "Resume"
+        url = "/resume"
       [[languages.en.menu.main]]
         identifier = "random"
         Name = "Random"
