@@ -13,6 +13,20 @@ This is a very basic version of my resume, and will be fleshed out as time goes 
 
 I'm a proficient software engineer with a diverse technical background that allows me to play multiple roles efficiently, and practically. I prefer working as a backend engineer, but am more than adept when it comes to DevOps, or systems administration tasks. I can quickly adapt to new and unfamiliar environments, and view documentation writing as an essential part of the software development lifecycle. [You can find a large collection of my work on GitHub](https://github.com/bonedaddy)
 
+# Programming Languages
+
+The following table lists the programming/scripting languages I know, as well as my proficiency in them. I prefer working with Golang, as I find it's one of the best languages for writing efficienct and powerful software with very little overhead. I can pick up new languages quickly, but prefer to stick with ones that I'm fluent in.
+
+| Language | Proficiency |
+|----------|-------------|
+| Golang   | Fluent      |
+| Solidity | Fluent      |
+| Bash     | Fluent      |
+| Python   | Basic       |
+| JavaScript | Basic     |
+| TypeScript | Basic     |
+| C/C++      | Basic |
+
 # Skillset
 
 * Backend systems engineering
@@ -22,6 +36,7 @@ I'm a proficient software engineer with a diverse technical background that allo
 * Blockchain & smart contract development
 * Test Driven Development
 * Documentation writing
+* 100 -> 120 words-per-minute typing speed
 
 # Work Experience
 
