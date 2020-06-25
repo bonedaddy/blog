@@ -1,22 +1,24 @@
 ---
-title: "I'm No Longer Bullish On IPFS Becoming Mainstream - Part 1"
+title: "I No Longer Believe In The Success Of IPFS - Part 1"
 date: 2020-06-21T22:00:36-07:00
 draft: true
 ---
 
-This article kicks off a series of posts about why I'm no longer bullish on IPFS becoming mainstream, and reaching its stated goals of replacing HTTP. In this post I'll be giving a brief overview of my current opinion about IPFS, along with what I think IPFS will become.
+This article kicks off a series of posts about why I no longer believe in the success of IPFS, and reaching its stated goals of replacing HTTP and becoming the web of tomorrow.  In this part I'll give an overview of my current opinion about IPFS, along with what I think IPFS will become. Subsequent parts will detail some of the many problems I've found, and why IPFS fails to live up to its many promises. My experience with IPFS is vast, and over the last three years I've spent thousands of hours writing hundreds of thousands of lines of code that use IPFS and it's subsystems.
 
 # Overview
 
-When I first started developing with IPFS three years ago, I was extremely bullish on the long-term prospects on IPFS, and seriously viewed it as a contender for replacing, or supplementing HTTP. Had you told me then that IPFS was just another P2P network like Zeronet, or Freenet, I would've laughed and brushed you off as crazy. 
+When I first started developing with IPFS three years ago, I was extremely bullish on the long-term prospects of IPFS, and seriously viewed it as a contender for replacing, or supplementing HTTP. Had you told me then that IPFS was just another P2P network like Zeronet, or Freenet, I would've laughed and brushed you off as crazy. 
 
-I would probably rationalized that by pointing out how active the community is, how the developers have already done a lot of work; Talk about the powers of content addressing and the benefits of data integrity, and data integrity verification.  In fact, you didn't even need me to say these things, just go to [their website](https://ipfs.io) and the benefits of IPFS are laid out clear as day:
+I would've rationalized that by pointing out how active the community is, how the developers have already done a lot of work; Talk about the powers of content addressing and the benefits of data integrity, and data integrity verification provided by it. In fact, you didn't even need me to say these things, just go to [their website](https://ipfs.io) and the benefits of IPFS are laid out clear as day:
 
 ![](/images/ipfs/main_website_summary.jpg)
 
 There's also a number of other things that IPFS lets you do; Including built-in Publish/Subscribe Messaging, a cryptographic naming system using a hash of public keys as the identifier, along with a neat data format called InterPlanetary Linked Data, or IPLD for short. When you consider these benefits, you begin to get a package that, as Protocol Labs likes to say, can replace the outdated and legacy HTTP that the modern day depends on.
 
-Back when I first started with IPFS three years ago, I used to believe this, but as time went on on and I've spent thousands of hours working with IPFS, I've lost this belief. There's a number of issues with IPFS that are large in scope, and design decisions that prove to be problematic at scale. The issues which I'll go into shortly, are by no means unfixable, but based on the current, and past state of affairs when it comes to IPFS development, I think it is unlikely that they will be fixed.
+However the sad reality is that many of the features provided by IPFS are either broken, non-existent, or limited in their capacity. Additionally, in a bit of irony, the same problems IPFS seeks to solve as indicated in the previously shown screenshot, it also suffers from. Additionally IPFS also tries to make itself appear extremely unique and as if it does things no other P2P network has done. In reality the only thing unique about IPFS is it combines things present in nearly every other P2P and legacy technology except in a single binary you can download. Because of all this, along with what I believe is the inability for Protocol Labs to successfully coordinate a project at the scale that IPFS seeks to be, I no longer believe in the success of IPFS.
+
+At the end of the day, most of the problems I'll mention in this series are not permanent in nature and can be fixed, however I don't think Protocol Labs fully realizes the issues and how serious they are, while also being in denial. A later part in the series will detail what I perceive are significant problems when it comes to Protocol Labs dealing with these issues.
 
 # What Will IPFS Become
 
