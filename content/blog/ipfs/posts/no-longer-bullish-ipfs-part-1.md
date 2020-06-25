@@ -28,6 +28,20 @@ There's a number of great things within the package of IPFS, such as the LibP2P 
 
 In short, 10 years from now I think most people will have forgotten about IPFS, while the network continues to exist in the same vein that Zeronet or Freenet continue to exist. The technologies created by the creation of IPFS will in one form or another be used by other technologies, but as has been seen to date IPFS is far to impractical, and the development of it too chaotic for it to ever become the next HTTP.
 
+
+----START WIP----
+Although IPFS as a whole uses many existing concepts and technologies, creating IPFS lead to the development of a few subsystems
+
+creating IPFS spawned a couple of "independent" (I quote independent as they aren't really independent and whose development are currently funded by Protocol Labs, the creators of IPFS) projects that provide value usable in many different technologies, whether thats P2P networks, traditional HTTP clients, etc...
+
+there are a few components/subsystems that are particularly interesting and unique. It is these subsystems that I think will continue to be used 10, 20 years from now; Maybe not in their current implementations, but these subsystems provide value that is usable across any system centralized, decentralized, or federated.
+
+The following subsystems that I think will be used are:
+* [multiformats](https://multiformats.io/)
+* [libp2p](https://libp2p.io/)
+* [cid](https://github.com/multiformats/cid)
+----END WIP----
+
 # Next In Part 2
 
 
