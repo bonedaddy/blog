@@ -34,7 +34,6 @@ The following specifications and their associated implementations are the only p
 - [libp2p](https://libp2p.io/)
 - [ipld](https://ipld.io/)
 - [cid](https://github.com/multiformats/cid)
-  
 
 Multiformats and it's various specifications, and to extension the Content Identifier specification make it very easy to future proof technology choices (hash algorithms, network addresses, etc...) and make them self-describing. This assists the creation of robust applications, and upgrade these applications over the long term.
 
@@ -44,4 +43,6 @@ Additionally LibP2P is being used by a wide variety of different projects, inclu
 
 # Summary
 
-In short I think the future outlook for IPFS as a better HTTP and even a replacement of it is extremely bleak. For a variety of reasons
+In short I think the future outlook for IPFS as a better HTTP and even a replacement of it is extremely bleak, however it will have an impact on the technology world by having created products such as libp2p, multiformats, etc...
+
+Subsequent posts in this series will expand the statements I have made as well as given new ones. If you stayed around this long thanks for reading. See you in the next one.
