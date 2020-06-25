@@ -18,7 +18,7 @@ In fact, you don't even need me to say these things, just go to [their website](
 
 There's also a number of other things that IPFS lets you do; Including built-in Publish/Subscribe Messaging, a cryptographic naming system using a hash of public keys as the identifier, along with a neat data format called InterPlanetary Linked Data, or IPLD for short. When you consider these benefits, you begin to get a package that, as Protocol Labs likes to say, "can surpass HTTP in order to build a better web for all of us"
 
-However the sad reality is that many of the features provided by IPFS are either broken, non-existent, or limited in their capacity. Ironically many of the issues IPFS seeks to solve with HTTP and the modern day web it also suffers from, and in some cases orders of magnitude **worse** than the traditional web.
+However the sad reality is that many of the features provided by IPFS are partially broken, improperly implemented, or limited in their capacity. Ironically many of the issues IPFS seeks to solve with HTTP and the modern day web it also suffers from, and in most cases orders of magnitude worse than HTTP and the modern day web.
 
 # What Will IPFS Become
 
