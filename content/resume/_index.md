@@ -22,10 +22,11 @@ The following table lists the programming/scripting languages I know, as well as
 | Golang   | Fluent      |
 | Solidity | Fluent      |
 | Bash     | Fluent      |
+| C        | Beginner    |
 | Python   | Basic       |
 | JavaScript | Basic     |
 | TypeScript | Basic     |
-| C/C++      | Basic |
+| C++        | Basic     |
 
 # Skillset
 
