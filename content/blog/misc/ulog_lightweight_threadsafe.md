@@ -1,7 +1,10 @@
 ---
-title: "Ulog- A Lightweight And ThreadSafe Logger In C"
+title: "Ulog - A Lightweight And ThreadSafe Logger In C"
 date: 2020-08-10T02:04:51-07:00
-draft: true
+draft: false
+keywords: ["valgrind", "logger", "c", "libs.garden", "memory leak", "color", "documentation", "ulog"]
+series: [ "ulog" ]
+images: ["/images/misc/valgrind_pls.img"]
 ---
 
 ![](/images/misc/valgrind_pls.png)
@@ -16,7 +19,9 @@ While working on these tasks I ended up needing to log error messages, debug inf
 
 By and large I prefer leveraging other software written by other people than writing yet another implementation of some desired functionality unless absolutely required. Although I suppose it doesnt really matter for hobby projects, I wanted to go the path of least resistance so I headed on over to one of my favourite websites called ["Libs Garden"](https://libs.garden/), a search engine type website focused on software, and searched for a fairly generic "logger" query. 
 
-I found a number of different repositories, and started experimenting with some of them. Unfortunately one of the big things I noticed was that a lot of these repositories suffered from some combination of being a large and complex code base,  having undocumented APIs, no usage (or out of date) examples, even containing memory leaks. Large and complex codebases really don't matter, but when you factor in undocumented APIs, and inaccurate usage examples you increase the overhead required for figuring out how to use the API. When you throw memory leaks into the mix, the situation becomes even worse.
+I found a number of different repositories, and started experimenting with some of them. Unfortunately one of the big things I noticed was that a lot of these repositories suffered from some combination of being a large and complex code base,  having undocumented APIs, no usage (or out of date) examples, even containing memory leaks. 
+
+Large and complex codebases generally aren't too big of an issue most of the time, but when you factor in undocumented APIs, and inaccurate usage examples you increase the overhead required for figuring out how to use the API. When you throw memory leaks into the mix, the situation becomes even worse.
 
 The biggest issue for me were the memory leaks, as I was trying to learn how to write quality C code free from memory leaks. Using a library that has memory leaks makes finding your own memory leaks a lot harder. Theoretically the memory leaks in these libraries could be patched, but that requires pouring through sometimes dozens of files, or extremely undocumented APIs. Quite quickly the path of least resistance became clear, and that was trying to write my own logger library.
 
