@@ -2,13 +2,14 @@
 title: "The Failure Of IPFS, Filecoin, And Protocol Labs - Part 1"
 date: 2020-08-18T18:02:03-07:00
 draft: false
+keywords: [ "ipfs", "protocol labs", "filecoin", "axios", "fil", "ico", "blueyard capital", "textile" ]
 ---
 
 I've been sitting on this blog post for quite some time now, and was unsure of whether or not to publish it. In part I felt a bit crazy, mostly due to the fact that outside of a few rare circumstances, not a lot of people were talking about the same problems I was. If they were, it was very brief and no one was being persistent in the same way I was.
 
 Earlier today however a very interesting article was released by axios titled [Investor revolt and legal dispute delay Filecoin plans](https://www.axios.com/filecoin-blockchain-delay-3b5e6b9a-bcc8-41cf-81cf-563f6cebb2c4.html). It describes some much more serious allegations than I have made, namely that the CEO of Protocol Labs allocating FIL token to himself and employees for much cheaper than what they were sold for during the ICO, and much cheaper than what private investors got.
 
-This finally gave me some outside clarification that the problems aren't just with IPFS. The problems are systemtic within Protocol Labs as a company. Given this, I figured I would make public this blog post. 
+This finally gave me some outside clarification that the problems aren't just with IPFS. The problems are systemic within Protocol Labs as a company. Given this, I figured I would make public this blog post. 
 
 It's a bit shorter than I would like, and is missing receipts to some of the claims I have made, but I will eventually get around to a follow-up post including the receipts. I'm a bit lazy, and figured I'd capitalize on the momentum from the axios article.
 
