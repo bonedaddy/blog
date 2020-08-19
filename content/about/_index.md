@@ -13,7 +13,6 @@ I'm extremely passionate when it comes to privacy, and am saddened by the way pe
 # Links
 
 * [github - personal](https://github.com/bonedaddy)
-* [github - company](https://github.com/RTradeLtd)
 * [twitter](https://twitter.com/shitbone127)
 * [keybase](https://keybase.io/postables)
 * [reddit](https://www.reddit.com/user/post_a_bles)
