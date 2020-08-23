@@ -6,13 +6,7 @@ draft: false
 
 # Email 
 
-I have a few different emails listed below, I prefer if you encrypt messages using my GPG key which is listed below
-
-* Immediate contact: `alextrottier2014@gmail.com`
-* Non-immediate (secure): `boned4ddy@protonmail.com`
-
-
-I check my protonmail account usually once a week, so if you need to reach me immediately it is best you use my gmail. Anything that is extremely confidential, or requires extra security should go to my protonmail account, and you should manually encrypt the message with my GPG key below.
+You can send me an email using `alex@bonedaddy.io`, and if possible please use PGP encryption with the key I have listed below
 
 # GPG
 
