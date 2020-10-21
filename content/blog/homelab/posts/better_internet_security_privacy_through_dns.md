@@ -185,7 +185,6 @@ server:
 
 # Usage
 
-
 Using this setup is quite simple, you will of course need to start the docker container using `docker-compose -f /path/to/docker-compose.yml up -d`. If this command runs without error, the final step is to adjust all your networked devices to use the `ServerIP` defined in the docker compose file as your DNS server. 
 
 Unless you will be running two different PiHole + Unbound servers on two sets of hardware, I would recommend only overriding your primary DNS server, as if you override both primary and secondary only using one server, a failure of that server means you can no longer browse the internet.
