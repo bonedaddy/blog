@@ -16,9 +16,7 @@ DNS is a key component of modern day technology. Whether you are running a homel
 
 When you go to visit a website, say for example this one, you would either arrive here by typing in the name of the website, or by clicking a link which sends you to this website by name. You would rarely, if ever type in the ip address of the web server host. To accomplish this your client would reach out to a DNS resolver of some sort, and have that resolver perform the actual name resolution work. 
 
-The resolver will eventually receive a response to its resolution request. In most default configurations this resolver is actually one ran by your ISP, or your home router, which in turn delegates to resolvers ran by your ISP.
-
-This process opens you up to a variety of attacks that can be used to prevent you from accessing a server, have you access the wrong server, while also allowing the resolvers you use to build a profile of your internet usage.
+The resolver will eventually receive a response to its resolution request. In most default configurations this resolver is actually one ran by your ISP, or your home router, which in turn delegates to resolvers ran by your ISP. This process opens you up to a variety of attacks that can be used to prevent you from accessing a server, have you access the wrong server, while also allowing the resolvers you use to build a profile of your internet usage.
 
 #### Blocking Access To Websites
 
@@ -38,7 +36,7 @@ If the source used to answer your name resolution request is poisoned, or under 
 
 There are a variety of ways that you can protect against DNS abuse, as well as minimizing the amount of information you disclose when making DNS requests. Unfortunately there is no one single tool or software service that can be used which will solve all possible attack vectors. You will need to evaluate your threat model, and the different problems you are trying to solve and pick the combination of tools that best solves your problems.
 
-Given this lets reconsider a high-level features we want, namely better privacy, and better security. Further considering these we can break this down into a more concrete set of desired features:
+Given this lets consider the high-level features we want, namely better privacy, and better security. Further considering these we can break this down into a more concrete set of desired features:
 
 * Better privacy
   * Reduce your footprint on the internet
@@ -60,7 +58,7 @@ PiHole ends up being the DNS server that you would expose to your clients, and u
 
 Even with the previously mentioned setup, there is still one middle-man that isn't cut out, and that will still be able to monitor your traffic and determine what DNS request you are performing. The two main ways to mitigate this attack vector is to modify unbound to use DNSCrypt, or DoT. By using either of this you will prevent your ISP from being able to monitor your DNS traffic. 
 
-Unfortunately using DNSCrypt or DoT introduce complexities, and performance overhead that are somewhat undesirable. Additionally you are also only achieving a bit if misdirection, since you have to then place a bit of trust in whatever DNSCrypt or DoT resolver you use. The solution to this then becomes to host your own resolver, but once again this greatly increases the complexity of the setup.
+Unfortunately using DNSCrypt or DoT introduce complexities, and performance overhead that are somewhat undesirable. Additionally you are also only achieving a bit of misdirection, since you have to then place a bit of trust in whatever DNSCrypt or DoT resolver you use. The solution to this then becomes to host your own resolver, but once again this greatly increases the complexity of the setup.
 
 # Prerequisites
 
