@@ -173,6 +173,12 @@ server:
     # Require DNSSEC data for trust-anchored zones, if such data is absent, the zone becomes BOGUS
     harden-dnssec-stripped: yes
 
+    harden-algo-downgrade: yes
+    harden-short-bufsize: yes
+    harden-large-queries: yes
+    harden-below-nxdomain: yes
+    # harden-referral-path: yes
+
     # Don't use Capitalization randomization as it known to cause DNSSEC issues sometimes
     # see https://discourse.pi-hole.net/t/unbound-stubby-or-dnscrypt-proxy/9378 for further details
     use-caps-for-id: no
@@ -184,6 +190,7 @@ server:
     # Perform prefetching of close to expired message cache entries
     # This only applies to domains that have been frequently queried
     prefetch: yes
+    prefetch-key: yes
 
     # One thread should be sufficient, can be increased on beefy machines. In reality for most users running on small networks or on a single machine, it should be unnecessary to seek performance enhancement by increasing num-threads above 1.
     num-threads: 1
