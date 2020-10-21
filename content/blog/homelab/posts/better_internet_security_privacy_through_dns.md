@@ -81,6 +81,7 @@ The two pihole directories dont require us to place anything inside of them, as 
 Configuration is pretty simple, namely consisting of a docker compose file and unbound configuration file. You will need to determine three configuration variables set through environment variables that you will need to update in the docker compose file.
 
 * IP address of pihole server (`ServerIP` env var)
+* The ip address of the unbound server (`DNS1`)
 * Password for pihole web administration console (`WEBPASSWORD` env var)
 * Timezone (`TZ` env var)
 
@@ -89,49 +90,30 @@ Now you'll want to update the following docker compose to your environment:
 ```yaml
 version: "3.5"
 services:
-
     unbound:
         image: klutchell/unbound
+        network_mode: host
         volumes:
             - /ext-hdd/unbound/unbound.conf:/opt/unbound/etc/unbound/unbound.conf
-        networks:
-            pihole_net:
-                ipv4_address: 10.0.0.2
-
+        restart: unless-stopped
     pihole:
         image: pihole/pihole
+        network_mode: host
         depends_on: 
             - unbound
-        links:
-            - unbound
-        ports:
-            - "53:53/tcp"
-            - "53:53/udp"
-            - "67:67/udp"
-            - "80:80/tcp"
-            - "443:443/tcp"
         environment:
           TZ: 'America/Vancouver'
-          WEBPASSWORD: admin
+          WEBPASSWORD: yourpasswordhere
           DNSSEC: "true"
-          ServerIP: rpi4-docker1
-          DNS1: 10.0.0.2#5053
+          ServerIP: 0.0.0.0
+          DNS1: yourlanip#5053
           DNS2: "no"
-          IPv6: "no"
+          IPv6: "yes"
         volumes:
             - /ext-hdd/pihole-etc/:/etc/pihole
             - /ext-hdd/pihole-dnsmasq.d/:/etc/dnsmasq.d/
         restart: unless-stopped
-        networks:
-            pihole_net:
-                ipv4_address: 10.0.0.3
 
-networks:
-    pihole_net:
-        driver: bridge
-        ipam:
-            config:
-                - subnet: 10.0.0.0/29
 ```
 
 This unbound configuration you will be able to use as is, and does not need to be updated:
@@ -140,19 +122,23 @@ This unbound configuration you will be able to use as is, and does not need to b
 server:
     verbosity: 1
     logfile: ""
-	auto-trust-anchor-file: /var/run/unbound/root.key
-    tls-cert-bundle: /etc/ssl/certs/ca-certificates.crt
     interface: 0.0.0.0
     port: 5053
     do-ip4: yes
     do-udp: yes
     do-tcp: yes
+    # auto-trust-anchor-file: "/var/lib/unbound/root.key"
+    # Send minimum amount of information to upstream servers to enhance
+    # privacy. Only sends minimum required labels of the QNAME and sets
+    # QTYPE to NS when possible.
 
-    # https://www.isc.org/blogs/qname-minimization-and-privacy/
+    # See RFC 7816 "DNS Query Name Minimisation to Improve Privacy" for
+    # details.
+
     qname-minimisation: yes
 
     # May be set to yes if you have IPv6 connectivity
-    do-ip6: no
+    do-ip6: yes
 
     # You want to leave this to no unless you have *native* IPv6. With 6to4 and
     # Terredo tunnels your web browser should favor IPv4 for the same reasons
@@ -194,7 +180,7 @@ server:
     private-address: fd00::/8
     private-address: fe80::/10
 
-    include: /opt/unbound/etc/unbound/a-records.conf
+    access-control: 0.0.0.0/0 allow
 ```
 
 # Usage
@@ -208,7 +194,7 @@ Unless you will be running two different PiHole + Unbound servers on two sets of
 
 PiHole lets you configure additional block lists, which can be used to block domains used by scams, ransomware, phishing, etc... While this won't protect you against 0days, it still greatly improve the security of your network, or if you have children its a low-cost method for blocking access to content innapropriate for children.
 
- For updating the adlists you'll want to consult the [documentation](https://docs.pi-hole.net/guides/whitelist-blacklist/) about the update process. Down below I've included some blocklists focused on security:
+For updating the adlists you'll want to consult the [documentation](https://docs.pi-hole.net/guides/whitelist-blacklist/) about the update process. Down below I've included some blocklists focused on security:
 
 * https://blocklistproject.github.io/Lists/scam.txt
 * https://blocklistproject.github.io/Lists/ransomware.txt
