@@ -24,7 +24,7 @@ The CCP accomplishes this with many different techniques, but a big piece of thi
 
 Following along our previous example, in order for a DNS resolver to return a reply to a request, it needs to know where that request came from. This means that the CCP controlled DNS server will know a client with your IP address made the resolution request. A less extreme example would be your ISP, or DNS provider using this information to build a profile of the websites you visit, and then selling this information to third-parties to use in their advertising analytics.
 
-#### Accessing Incorrect Content
+#### Accessing Malicious Content
 
 If the source used to answer your name resolution request is poisoned, or under control of a hostile actor, they can send you an answer which directs you to malicious content. In fact this kind of attack has been used to steal cryptocurrency from people, [using an attack leveraging DNS and BGP](https://www.theverge.com/2018/4/24/17275982/myetherwallet-hack-bgp-dns-hijacking-stolen-ethereum).
 
@@ -206,6 +206,12 @@ Unless you will be running two different PiHole + Unbound servers on two sets of
 
 # Bonus Step: Better Blocking
 
-PiHole lets you configure additional block lists, which can be used to block domains used by scams, ransomware, phishing, etc... While this won't protect you against 0days, it still greatly improve the security of your network. For this you'll want to consult the [documentation](https://docs.pi-hole.net/guides/whitelist-blacklist/) about the update process, and use the following lists:
+PiHole lets you configure additional block lists, which can be used to block domains used by scams, ransomware, phishing, etc... While this won't protect you against 0days, it still greatly improve the security of your network, or if you have children its a low-cost method for blocking access to content innapropriate for children.
 
-* 
+ For updating the adlists you'll want to consult the [documentation](https://docs.pi-hole.net/guides/whitelist-blacklist/) about the update process. Down below I've included some blocklists focused on security:
+
+* https://blocklistproject.github.io/Lists/scam.txt
+* https://blocklistproject.github.io/Lists/ransomware.txt
+* https://blocklistproject.github.io/Lists/phishing.txt		
+* https://blocklistproject.github.io/Lists/malware.txt		
+* https://blocklistproject.github.io/Lists/fraud.txt		
