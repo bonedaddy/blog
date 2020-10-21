@@ -82,10 +82,8 @@ The two pihole directories dont require us to place anything inside of them, as 
 
 # Configuration
 
-Configuration is pretty simple, namely consisting of a docker compose file and unbound configuration file. You will need to determine three configuration variables set through environment variables that you will need to update in the docker compose file.
+Configuration is pretty simple, namely consisting of a docker compose file and unbound configuration file. You will need to determine two configuration variables set through environment variables that you will need to update in the docker compose file.
 
-* IP address of pihole server (`ServerIP` env var)
-* The ip address of the unbound server (`DNS1`)
 * Password for pihole web administration console (`WEBPASSWORD` env var)
 * Timezone (`TZ` env var)
 
@@ -96,28 +94,45 @@ version: "3.5"
 services:
     unbound:
         image: klutchell/unbound
-        network_mode: host
         volumes:
             - /ext-hdd/unbound/unbound.conf:/opt/unbound/etc/unbound/unbound.conf
         restart: unless-stopped
+        networks:
+            pihole_net:
+                ipv4_address: 10.0.0.2
     pihole:
         image: pihole/pihole
-        network_mode: host
+        # prevents issues starting pihole
+        # https://github.com/pi-hole/pi-hole/issues/1800
+        # https://docs.docker.com/compose/compose-file/
+        dns: 127.0.0.1
+        ports:
+            - "53:53/tcp"
+            - "53:53/udp"
+            - "80:80/tcp"
         depends_on: 
             - unbound
         environment:
           TZ: 'America/Vancouver'
-          WEBPASSWORD: yourpasswordhere
+          WEBPASSWORD: passwordhere
           DNSSEC: "true"
           ServerIP: 0.0.0.0
-          DNS1: yourlanip#5053
+          DNS1: 10.0.0.2#5053
           DNS2: "no"
           IPv6: "yes"
         volumes:
             - /ext-hdd/pihole-etc/:/etc/pihole
             - /ext-hdd/pihole-dnsmasq.d/:/etc/dnsmasq.d/
         restart: unless-stopped
-
+        networks:
+            pihole_net:
+                ipv4_address: 10.0.0.3
+networks:
+    pihole_net:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 10.0.0.0/29
 ```
 
 This unbound configuration you will be able to use as is, and does not need to be updated:
