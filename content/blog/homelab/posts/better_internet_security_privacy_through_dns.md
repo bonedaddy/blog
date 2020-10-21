@@ -6,6 +6,8 @@ series: [ "homelab", "dns", "privacy" ]
 keywords: [ "overview", "homelab", "raspberry-pi", "edns", "qname", "dnssec", "pihole", "unbound", "docker" ]
 ---
 
+![](/images/homelab/pihole.png)
+
 # Overview
 
 DNS is a key component of modern day technology. Whether you are running a homelab, or simply browsing the internet, DNS will play a crucial role in how you use many internet protocols. It is however often overlooked when setting up a custom network, or when exploring different methods of using the internet in a way that affords you better privacy, and reduces the ability for tech companies, and governments to track your internet usage. This post will explore different methods by which DNS can be used to impact your privacy on the Internet, followed by describing a system that can be used to defend against these vulnerabilities, and how you can go about installing such a system.
