@@ -146,7 +146,9 @@ server:
     do-ip4: yes
     do-udp: yes
     do-tcp: yes
-    # auto-trust-anchor-file: "/var/lib/unbound/root.key"
+    
+    auto-trust-anchor-file: /var/run/unbound/root.key
+
     # Send minimum amount of information to upstream servers to enhance
     # privacy. Only sends minimum required labels of the QNAME and sets
     # QTYPE to NS when possible.
