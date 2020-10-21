@@ -2,6 +2,8 @@
 title: "Better Internet Security And Privacy Through DNS"
 date: 2020-10-18T17:11:21-07:00
 draft: true
+series: [ "homelab", "dns", "privacy" ]
+keywords: [ "overview", "homelab", "raspberry-pi", "edns", "qname", "dnssec", "pihole", "unbound", "docker" ]
 ---
 
 # Overview
