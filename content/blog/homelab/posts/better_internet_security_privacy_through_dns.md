@@ -179,7 +179,7 @@ server:
     harden-short-bufsize: yes
     harden-large-queries: yes
     harden-below-nxdomain: yes
-    # harden-referral-path: yes
+    harden-referral-path: yes
 
     # Don't use Capitalization randomization as it known to cause DNSSEC issues sometimes
     # see https://discourse.pi-hole.net/t/unbound-stubby-or-dnscrypt-proxy/9378 for further details
@@ -197,8 +197,11 @@ server:
     # One thread should be sufficient, can be increased on beefy machines. In reality for most users running on small networks or on a single machine, it should be unnecessary to seek performance enhancement by increasing num-threads above 1.
     num-threads: 1
 
-    # Ensure kernel buffer is large enough to not lose messages in traffic spikes
+    # Ensure kernel buffers is large enough to not lose messages in traffic spikes
     so-rcvbuf: 1m
+    so-sndbuf: 1m
+
+    aggressive-nsec: yes
 
     # Ensure privacy of local IP ranges
     private-address: 192.168.0.0/16
