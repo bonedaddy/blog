@@ -10,9 +10,11 @@ DNS is a key component of modern day technology. Whether you are running a homel
 
 # DNS As A Weapon
 
-When you go to visit a website, say for example this one, you would either arrive here by typing in the name of the website, or by clicking a link which sends you to this website by name. You would rarely, if ever type in the ip address of the web server host. To accomplish this your client would reach out to a DNS resolver of some sort, and have that resolver perform the actual name resolution work. The resolver will eventually receive a response to its resolution request.
+When you go to visit a website, say for example this one, you would either arrive here by typing in the name of the website, or by clicking a link which sends you to this website by name. You would rarely, if ever type in the ip address of the web server host. To accomplish this your client would reach out to a DNS resolver of some sort, and have that resolver perform the actual name resolution work. 
 
-This process opens you up to a variety of attacks that can be used to prevent you from accessing a server, accessing the wrong server, and provides a way for others to monitor your internet usage and build a profile of your browsing history. Part of the problem relies in the fact that your DNS resolver often delegate trust to another resolver to provide the correct response, and that DNS wasn't designed explicitly with security in mind.
+The resolver will eventually receive a response to its resolution request. In most default configurations this resolver is actually one ran by your ISP, or your home router, which in turn delegates to resolvers ran by your ISP.
+
+This process opens you up to a variety of attacks that can be used to prevent you from accessing a server, have you access the wrong server, while also allowing the resolvers you use to build a profile of your internet usage.
 
 #### Blocking Access To Websites
 
@@ -55,8 +57,6 @@ PiHole ends up being the DNS server that you would expose to your clients, and u
 Even with the previously mentioned setup, there is still one middle-man that isn't cut out, and that will still be able to monitor your traffic and determine what DNS request you are performing. The two main ways to mitigate this attack vector is to modify unbound to use DNSCrypt, or DoT. By using either of this you will prevent your ISP from being able to monitor your DNS traffic. 
 
 Unfortunately using DNSCrypt or DoT introduce complexities, and performance overhead that are somewhat undesirable. Additionally you are also only achieving a bit if misdirection, since you have to then place a bit of trust in whatever DNSCrypt or DoT resolver you use. The solution to this then becomes to host your own resolver, but once again this greatly increases the complexity of the setup.
-
-As such for the purpose of this, we will simply accept that our ISP will be able to log our DNS traffic. Realistically this isn't that big of an issue and is an acceptable trade-off given the benefits the described setup will give.
 
 # Prerequisites
 
