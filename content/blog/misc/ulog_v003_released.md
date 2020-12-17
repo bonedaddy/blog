@@ -67,7 +67,7 @@ LOG_DEBUG(thl, "this is a debug log");
 
 When writing colored logs, previously a chunk of memory was allocated for a char pointer. This would allocate enough memory to store the ANSI color code for the desired log level, the message itself, space at the end for the ANSI reset color code, and a new line character.
 
-This was done as follows `char *write_message = calloc(1, strlen(pcolor) + strlen(reset) + strlen(message) + 2);`. Since all we're doing with this chunk of memory is storing the message, followed by passing `write_message` into the `write` function, there is actually no need to allocate a chunk of memory in the first place. Instead we can use a stack alloated array, thus avoiding heap allocations entirely.
+This was done as follows `char *write_message = calloc(1, strlen(pcolor) + strlen(reset) + strlen(message) + 2);`. Since all we're doing with this chunk of memory is storing the message, followed by passing `write_message` into the `write` function, there is actually no need to allocate a chunk of memory in the first place. Instead we can use a stack allocated array, thus avoiding heap allocations entirely.
 
 The new code is as folllows:
 
