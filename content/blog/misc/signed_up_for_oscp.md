@@ -1,6 +1,7 @@
 ---
 title: "I Signed Up For OSCP (Offensive Security Certified Proffesional)"
 date: 2020-12-16T01:06:21-08:00
+keywords: ["oscp", "cyber", "cyber security", "security", "offensive security", "ethical hacking"]
 draft: false
 ---
 
