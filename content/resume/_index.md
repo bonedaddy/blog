@@ -41,9 +41,16 @@ The following table lists the programming/scripting languages I know, as well as
 
 # Work Experience
 
+### Software Developer - Tulip Protocol
+
+From: March'ish 2020 -> Present
+Website: https://tulip.garden
+
+
+
 ### CTO - RTrade Technologies Ltd
 
-From: November 2017 -> Present
+From: November 2017 -> 2019
 
 TODO: add more details
 
